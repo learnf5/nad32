@@ -1,0 +1,5 @@
+127.0.0.1  localhost
+10.10.1.61  www.nginxtraining.com    nginxtraining
+10.10.1.61  www.nginxdashboard.com   nginxdashboard
+10.10.1.61  nginx.f5trn.com          nginx
+10.10.1.101 juice.f5trn.com          juice
