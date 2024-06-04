@@ -8,5 +8,4 @@ PS4='+$(date +"%T.%3N"): '
 # sudo cp /tmp/hosts                                  /etc/hosts
 
 # update nginx host for the specific lab
-# NOTHING special for Lab1
-
+sudo ssh nginx mkdir --parents /home/ubuntu/public_html
