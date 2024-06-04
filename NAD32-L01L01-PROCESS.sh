@@ -14,8 +14,15 @@ sudo ssh nginx mkdir --parents /home/ubuntu/public_html/application2
 curl --silent --remote-name-all --output-dir /tmp https://raw.githubusercontent.com/learnf5/nad32/main/common/ubuntu/public_html/application1/app1.html
 sudo scp /tmp/app1.html                                    nginx:/home/ubuntu/public_html/application1/
 curl --silent --remote-name-all --output-dir /tmp https://raw.githubusercontent.com/learnf5/nad32/main/common/ubuntu/public_html/application2/app2.html
-sudo scp /tmp/app1.html                                    nginx:/home/ubuntu/public_html/application2/
+sudo scp /tmp/app2.html                                    nginx:/home/ubuntu/public_html/application2/
 
-sudo ssh nginx mkdir --parents /home/ubuntu/public_html/shop/product/
+sudo ssh nginx mkdir --parents /home/ubuntu/public_html/shop/product
 curl --silent --remote-name-all --output-dir /tmp https://raw.githubusercontent.com/learnf5/nad32/main/common/ubuntu/public_html/shop/product/product{1,2,3}.html
 sudo scp /tmp/product*.html                                nginx:/home/ubuntu/public_html/shop/product/
+
+sudo ssh nginx mkdir --parents /data/server2/sampleapp
+sudo ssh nginx mkdir --parents /data/images
+curl --silent --remote-name-all --output-dir /tmp https://raw.githubusercontent.com/learnf5/nad32/main/common/data/images/logo.png
+sudo scp /tmp/logo.png                                    nginx:/data/images/
+curl --silent --remote-name-all --output-dir /tmp https://raw.githubusercontent.com/learnf5/nad32/main/common/data/server2/sampleapp/index.html
+sudo scp /tmp/index.html                                    nginx:/data/server2/sampleapp/
