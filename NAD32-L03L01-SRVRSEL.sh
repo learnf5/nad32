@@ -11,3 +11,6 @@ PS4='+$(date +"%T.%3N"): '
 
 curl --silent --remote-name-all --output-dir /tmp https://raw.githubusercontent.com/learnf5/nad32/main/lab03/default.bak
 sudo scp /tmp/default.bak                              nginx:/etc/nginx/conf.d/
+
+curl --silent --remote-name-all --output-dir /tmp https://raw.githubusercontent.com/learnf5/nad32/main/lab03/mywebserver.bak
+sudo scp /tmp/mywebserver.bak                              nginx:/etc/nginx/conf.d/
