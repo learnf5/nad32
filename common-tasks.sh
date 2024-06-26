@@ -34,6 +34,10 @@ sudo ssh nginx mkdir --parents /home/ubuntu/public_html/shop/product
 curl --silent --remote-name-all --output-dir /tmp https://raw.githubusercontent.com/learnf5/nad32/main/common/ubuntu/public_html/shop/product/product{1,2,3}.html
 sudo scp /tmp/product*.html                                nginx:/home/ubuntu/public_html/shop/product/
 
+sudo ssh nginx mkdir --parents /home/ubuntu/public_html/shop/services
+curl --silent --remote-name-all --output-dir /tmp https://raw.githubusercontent.com/learnf5/nad32/main/common/ubuntu/public_html/shop/services/service{1,2,3}.html
+sudo scp /tmp/service*.html                                nginx:/home/ubuntu/public_html/shop/services/
+
 sudo ssh nginx mkdir --parents /data/images
 curl --silent --remote-name-all --output-dir /tmp https://raw.githubusercontent.com/learnf5/nad32/main/common/data/images/logo.png
 sudo scp /tmp/logo.png                                    nginx:/data/images/
