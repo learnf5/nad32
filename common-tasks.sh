@@ -35,7 +35,7 @@ curl --silent --remote-name-all --output-dir /tmp https://raw.githubusercontent.
 sudo scp /tmp/product*.html                                nginx:/home/ubuntu/public_html/shop/product/
 
 sudo ssh nginx mkdir --parents /home/ubuntu/public_html/shop/services
-curl --silent --remote-name-all --output-dir /tmp https://raw.githubusercontent.com/learnf5/nad32/main/common/ubuntu/public_html/shop/services/service{1,2,3}.html
+curl --silent --remote-name-all --output-dir /tmp https://raw.githubusercontent.com/learnf5/nad32/main/common/ubuntu/public_html/shop/services/service{1,2,3,4,5}.html
 sudo scp /tmp/service*.html                                nginx:/home/ubuntu/public_html/shop/services/
 
 sudo ssh nginx mkdir --parents /data/images
